@@ -1,0 +1,31 @@
+<nav>
+    <img (click)="scroll('cover')" id="title" src="assets/img/finantekaPurple.svg" height="60" alt="">
+    <div id="menu">
+        <button (click)="showMenu()" [class]="menuActive"></button>
+        <div id="options" [class]="menuActive">
+            <a href="" (click)="scroll('quees')">
+                ¿Quiénes Somos?
+            </a>
+            <a href="" (click)="scroll('quees')">
+                ¿Cómo Funciona?
+            </a>
+        </div>
+        <div id="contact">
+            <a href="https://www.facebook.com/Finanteka/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="tel:5573789914">
+                <i class="fas fa-phone"></i>
+                <span>
+                    55 7378 9914
+                </span>
+            </a>
+            <a href="mailto:info@finanteka.com">
+                <i class="far fa-envelope"></i>
+                <span>
+                    info@finanteka.com
+                </span>
+            </a>
+        </div>
+    </div>
+</nav>
