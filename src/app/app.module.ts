@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 
+//FB Chat
+import { FacebookModule } from 'ngx-facebook';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +15,8 @@ import { HomeComponent } from './components/home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FacebookModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
