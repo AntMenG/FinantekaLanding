@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>FinantekaLanding</title>
@@ -10,8 +11,27 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
   <script type="text/javascript" src="https://connect.facebook.net/en_US/sdk.js"></script>
 </head>
+
 <body>
   <app-root></app-root>
+  <div id="fb-root"></div>
   <script src="https://kit.fontawesome.com/1b61e13f9a.js"></script>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v4.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 </body>
+
 </html>
